@@ -1,0 +1,35 @@
+:root {
+  --font-mono: 'Source Code Pro', monospace;
+  --font-sans: 'Lato', sans-serif;
+
+  --clr-almost-black: #2c2f33;
+  --clr-pure-black: #000000;
+  --clr-winter-morning: #ffffff;
+  --clr-cold-winds: #3460fe;
+
+  --width: min(80%, 160ch);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--clr-winter-morning);
+  color: var(--clr-winter-morning);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+  font-family: var(--font-mono);
+  font-weight: 900;
+  letter-spacing: -0.1em;
+}

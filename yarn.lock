@@ -133,7 +133,7 @@ cheap-watch@^1.0.4:
   resolved "https://registry.yarnpkg.com/cheap-watch/-/cheap-watch-1.0.4.tgz#0bcb4a3a8fbd9d5327936493f6b56baa668d8fef"
   integrity sha512-QR/9FrtRL5fjfUJBhAKCdi0lSRQ3rVRRum3GF9wDKp2TJbEIMGhUEr2yU8lORzm9Isdjx7/k9S0DFDx+z5VGtw==
 
-chokidar@^3.4.1:
+"chokidar@>=3.0.0 <4.0.0", chokidar@^3.4.1:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.5.2.tgz#dba3976fcadb016f66fd365021d91600d01c1e75"
   integrity sha512-ekGhOnNVPgT77r4K/U3GDhu+FQ2S8TnK/s2KbIGXi0SZWuwkZ2QNyfWdZW+TVfn84DpEP7rLeCt2UI6bJ8GwbQ==
@@ -618,6 +618,13 @@ sander@^0.5.0:
     mkdirp "^0.5.1"
     rimraf "^2.5.2"
 
+sass@^1.43.4:
+  version "1.43.4"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.43.4.tgz#68c7d6a1b004bef49af0d9caf750e9b252105d1f"
+  integrity sha512-/ptG7KE9lxpGSYiXn7Ar+lKOv37xfWsZRtFYal2QHNigyVQDx685VFT/h7ejVr+R8w7H4tmUgtulsKl5YpveOg==
+  dependencies:
+    chokidar ">=3.0.0 <4.0.0"
+
 sorcery@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/sorcery/-/sorcery-0.10.0.tgz#8ae90ad7d7cb05fc59f1ab0c637845d5c15a52b7"
@@ -677,6 +684,14 @@ svelte-hmr@^0.14.7:
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.14.7.tgz#7fa8261c7b225d9409f0a86f3b9ea5c3ca6f6607"
   integrity sha512-pDrzgcWSoMaK6AJkBWkmgIsecW0GChxYZSZieIYfCP0v2oPyx2CYU/zm7TBIcjLVUPP714WxmViE9Thht4etog==
 
+svelte-particles@^1.19.0:
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/svelte-particles/-/svelte-particles-1.19.0.tgz#42d9c0e17db770e6ea00e73235f056b0c1a109cd"
+  integrity sha512-AGdLmL+SH1bzy6iT9HLPtAtIDJ2Kv01now0mHV1K7PpgtHCCJGWX2KuMnTOI2vn7zHiaXVfGnkfA/gA7RWrdCA==
+  dependencies:
+    tslib "^2.3.1"
+    tsparticles "^1.36.0"
+
 svelte-preprocess@^4.0.0, svelte-preprocess@^4.9.4:
   version "4.9.8"
   resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-4.9.8.tgz#fd40afebfb352f469beab289667485ebf0d811da"
@@ -705,6 +720,11 @@ tslib@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
+
+tsparticles@^1.36.0:
+  version "1.36.0"
+  resolved "https://registry.yarnpkg.com/tsparticles/-/tsparticles-1.36.0.tgz#8ee6703fbc84faa2f4efa2b8516f1b0aa7199266"
+  integrity sha512-T3tvGmiQ2Q5rOxedjw4OjIFUOy+cQ7LAtlRsHTju4zRtqyebd97vwvDQ+ax7ufmR0CpzfifY3LKqqnx38oYtEg==
 
 typescript@*, typescript@^4.4.3:
   version "4.4.4"
