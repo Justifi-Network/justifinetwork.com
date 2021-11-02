@@ -684,14 +684,6 @@ svelte-hmr@^0.14.7:
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.14.7.tgz#7fa8261c7b225d9409f0a86f3b9ea5c3ca6f6607"
   integrity sha512-pDrzgcWSoMaK6AJkBWkmgIsecW0GChxYZSZieIYfCP0v2oPyx2CYU/zm7TBIcjLVUPP714WxmViE9Thht4etog==
 
-svelte-particles@^1.19.0:
-  version "1.19.0"
-  resolved "https://registry.yarnpkg.com/svelte-particles/-/svelte-particles-1.19.0.tgz#42d9c0e17db770e6ea00e73235f056b0c1a109cd"
-  integrity sha512-AGdLmL+SH1bzy6iT9HLPtAtIDJ2Kv01now0mHV1K7PpgtHCCJGWX2KuMnTOI2vn7zHiaXVfGnkfA/gA7RWrdCA==
-  dependencies:
-    tslib "^2.3.1"
-    tsparticles "^1.36.0"
-
 svelte-preprocess@^4.0.0, svelte-preprocess@^4.9.4:
   version "4.9.8"
   resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-4.9.8.tgz#fd40afebfb352f469beab289667485ebf0d811da"
@@ -720,11 +712,6 @@ tslib@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
-
-tsparticles@^1.36.0:
-  version "1.36.0"
-  resolved "https://registry.yarnpkg.com/tsparticles/-/tsparticles-1.36.0.tgz#8ee6703fbc84faa2f4efa2b8516f1b0aa7199266"
-  integrity sha512-T3tvGmiQ2Q5rOxedjw4OjIFUOy+cQ7LAtlRsHTju4zRtqyebd97vwvDQ+ax7ufmR0CpzfifY3LKqqnx38oYtEg==
 
 typescript@*, typescript@^4.4.3:
   version "4.4.4"

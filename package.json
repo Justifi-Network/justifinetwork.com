@@ -22,7 +22,6 @@
   },
   "type": "module",
   "dependencies": {
-    "sass": "^1.43.4",
-    "svelte-particles": "^1.19.0"
+    "sass": "^1.43.4"
   }
 }

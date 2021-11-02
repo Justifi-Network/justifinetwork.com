@@ -1,87 +1,68 @@
 <script lang="ts">
   import '../global.scss'
+  import { style, active } from '$lib/style'
 </script>
 
-<header>
-  <div class="content">
-    <p class="title">justifi</p>
+<div style={$style}>
+  <aside>
     <nav>
-      <a href="#">Solutions</a>
-      <a href="#">Contact</a>
+      <a class:active={$active == 'home'} href="#home">home</a>
+      <a class:active={$active == 'solutions'} href="#solutions">solutions</a>
+      <a class:active={$active == 'contact'} href="#contact">contact</a>
     </nav>
-  </div>
-</header>
+  </aside>
 
-<slot />
+  <main>
+    <slot />
+  </main>
+</div>
 
 <style lang="scss">
-  header {
-    background: var(--clr-almost-black);
-    padding: 0.5rem 0;
-    box-shadow: 0 0 5px hsla(0, 0, 0, 0.2);
+  div {
+    overflow-y: auto;
+    height: 100%;
+    scroll-behavior: smooth;
   }
 
-  .content {
-    max-width: var(--width);
-    margin: auto;
+  aside {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 5rem;
+
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-  }
-
-  .title {
-    color: var(--clr-winter-morning);
-    font-size: 2rem;
   }
 
   nav {
     display: flex;
-    flex-direction: row;
-    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
 
-    a {
-      color: var(--clr-winter-morning);
-      text-decoration: none;
-      font-size: 1.25rem;
-      position: relative;
+  a {
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 1.5rem;
 
-      &::before,
-      &::after {
-        content: '';
-        display: block;
-        height: 0.125rem;
-        width: 0;
+    display: flex;
+    align-items: center;
 
-        position: absolute;
-        bottom: -0.25rem;
+    &::after {
+      content: '';
+      height: 1rem;
+      width: 1rem;
+      margin-left: 1rem;
+      display: block;
+      border-radius: 50%;
 
-        background: var(--clr-cold-winds);
-      }
+      border: 0.1875rem solid var(--fg);
+    }
 
-      &::before {
-        transition: width 0s ease, background-color 500ms ease;
-        left: 0;
-      }
-
-      &::after {
-        transition: width 500ms ease;
-        right: 0;
-      }
-
-      &:hover {
-        &::before {
-          width: 100%;
-          background: var(--clr-cold-winds);
-          transition: width 500ms ease;
-        }
-
-        &::after {
-          width: 100%;
-          background: transparent;
-          transition: all 0s ease;
-        }
-      }
+    &.active::after {
+      background: var(--fg);
     }
   }
 </style>
