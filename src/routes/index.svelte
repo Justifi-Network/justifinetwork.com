@@ -40,16 +40,16 @@
     margin-left: 9rem;
     font-size: 3rem;
     font-weight: 400;
-    color: var(--fg);
   }
 
   h2 {
     font-size: 5rem;
     font-weight: 700;
-    color: var(--contrast);
   }
 
-  p {
+  h1,
+  p,
+  a {
     color: var(--fg);
   }
 
@@ -63,7 +63,6 @@
 
   a[href^='mailto:'] {
     font-size: 3rem;
-    color: var(--fg);
     text-decoration: none;
     font-weight: 700;
     display: flex;
@@ -75,8 +74,13 @@
     }
   }
 
+  h2,
+  h3,
   .contrast {
     color: var(--contrast);
+    &::selection {
+      background: var(--contrast);
+    }
   }
 
   .solutions-grid {
@@ -87,7 +91,6 @@
     max-width: 80%;
 
     h3 {
-      color: var(--contrast);
       font-size: 2rem;
 
       &:nth-child(1) {

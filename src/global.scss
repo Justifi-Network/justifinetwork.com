@@ -35,3 +35,8 @@ body {
 ::-webkit-scrollbar-thumb {
   background: var(--bg);
 }
+
+::selection {
+  background: var(--fg);
+  color: var(--bg);
+}
