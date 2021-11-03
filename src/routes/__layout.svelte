@@ -33,6 +33,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    pointer-events: none;
   }
 
   nav {
@@ -40,6 +42,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+
+    pointer-events: initial;
   }
 
   a {
@@ -50,6 +54,8 @@
     display: flex;
     align-items: center;
 
+    transition: color var(--transition);
+
     &::after {
       content: '';
       height: 1rem;
@@ -59,6 +65,8 @@
       border-radius: 50%;
 
       border: 0.1875rem solid var(--fg);
+
+      transition: border var(--transition), background var(--transition);
     }
 
     &.active::after {

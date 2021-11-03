@@ -40,12 +40,25 @@
     margin-left: 9rem;
     font-size: 3rem;
     font-weight: 400;
+    color: var(--fg);
   }
 
   h2 {
     font-size: 5rem;
     font-weight: 700;
     color: var(--contrast);
+  }
+
+  p {
+    color: var(--fg);
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  a {
+    transition: color var(--transition);
   }
 
   a[href^='mailto:'] {
@@ -66,13 +79,6 @@
     color: var(--contrast);
   }
 
-  /*
-  .montserrat {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-  }
-  */
-
   .solutions-grid {
     display: grid;
     grid-template-areas: 't1 t2 t3' 'p1 p2 p3';
@@ -83,7 +89,7 @@
     h3 {
       color: var(--contrast);
       font-size: 2rem;
-      
+
       &:nth-child(1) {
         grid-area: t1;
       }

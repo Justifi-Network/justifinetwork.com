@@ -6,6 +6,10 @@
   --clr-pure-black: #000000;
   --clr-winter-morning: #ffffff;
   --clr-cold-winds: #3460fe;
+
+  --transition-time: 500ms;
+  --transition-curve: ease;
+  --transition: var(--transition-time) var(--transition-curve);
 }
 
 *,
@@ -14,8 +18,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  transition: color 300ms ease, background 300ms ease;
 }
 
 html,

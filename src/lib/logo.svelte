@@ -37,3 +37,9 @@
     fill="var(--fg)"
   />
 </svg>
+
+<style lang="scss">
+  path {
+    transition: fill var(--transition);
+  }
+</style>
