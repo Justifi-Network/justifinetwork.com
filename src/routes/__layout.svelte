@@ -15,6 +15,10 @@
   <main>
     <slot />
   </main>
+
+  <footer>
+    <p>Justifi Network © {new Date().getFullYear()}</p>
+  </footer>
 </div>
 
 <style lang="scss">
@@ -71,6 +75,18 @@
 
     &.active::after {
       background: var(--fg);
+    }
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+
+    p {
+      color: var(--fg);
     }
   }
 </style>
