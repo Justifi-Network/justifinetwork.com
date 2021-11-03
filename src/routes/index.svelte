@@ -40,12 +40,20 @@
     margin-left: 9rem;
     font-size: 3rem;
     font-weight: 400;
+    color: var(--fg);
+    transition: color 300ms ease;
   }
 
   h2 {
     font-size: 5rem;
     font-weight: 700;
     color: var(--contrast);
+    transition: color 300ms ease;
+  }
+
+  p {
+    color: var(--fg);
+    transition: color 300ms ease;
   }
 
   a[href^='mailto:'] {
@@ -56,6 +64,7 @@
     display: flex;
     align-items: center;
     line-height: 80%;
+    transition: color 300ms ease;
 
     &:hover {
       text-decoration: underline;
@@ -65,13 +74,6 @@
   .contrast {
     color: var(--contrast);
   }
-
-  /*
-  .montserrat {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-  }
-  */
 
   .solutions-grid {
     display: grid;
@@ -83,7 +85,7 @@
     h3 {
       color: var(--contrast);
       font-size: 2rem;
-      
+
       &:nth-child(1) {
         grid-area: t1;
       }

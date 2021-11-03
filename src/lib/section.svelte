@@ -40,6 +40,7 @@
     justify-content: center;
     align-items: flex-start;
     background: var(--bg);
-    color: var(--fg);
+
+    transition: background 300ms ease;
   }
 </style>

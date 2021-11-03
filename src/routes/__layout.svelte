@@ -50,6 +50,8 @@
     display: flex;
     align-items: center;
 
+    transition: color 300ms ease;
+
     &::after {
       content: '';
       height: 1rem;
@@ -59,10 +61,13 @@
       border-radius: 50%;
 
       border: 0.1875rem solid var(--fg);
+
+      transition: border 300ms ease;
     }
 
     &.active::after {
       background: var(--fg);
+      transition: background 300ms ease;
     }
   }
 </style>
