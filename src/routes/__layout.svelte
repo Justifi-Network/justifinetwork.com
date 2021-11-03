@@ -33,6 +33,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    pointer-events: none;
   }
 
   nav {
@@ -40,6 +42,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+
+    pointer-events: initial;
   }
 
   a {
