@@ -41,19 +41,24 @@
     font-size: 3rem;
     font-weight: 400;
     color: var(--fg);
-    transition: color 300ms ease;
   }
 
   h2 {
     font-size: 5rem;
     font-weight: 700;
     color: var(--contrast);
-    transition: color 300ms ease;
   }
 
   p {
     color: var(--fg);
-    transition: color 300ms ease;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  a {
+    transition: color var(--transition);
   }
 
   a[href^='mailto:'] {
@@ -64,7 +69,6 @@
     display: flex;
     align-items: center;
     line-height: 80%;
-    transition: color 300ms ease;
 
     &:hover {
       text-decoration: underline;

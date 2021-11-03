@@ -50,7 +50,7 @@
     display: flex;
     align-items: center;
 
-    transition: color 300ms ease;
+    transition: color var(--transition);
 
     &::after {
       content: '';
@@ -62,12 +62,11 @@
 
       border: 0.1875rem solid var(--fg);
 
-      transition: border 300ms ease;
+      transition: border var(--transition), background var(--transition);
     }
 
     &.active::after {
       background: var(--fg);
-      transition: background 300ms ease;
     }
   }
 </style>

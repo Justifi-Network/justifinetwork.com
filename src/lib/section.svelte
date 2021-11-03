@@ -41,6 +41,6 @@
     align-items: flex-start;
     background: var(--bg);
 
-    transition: background 300ms ease;
+    transition: background var(--transition);
   }
 </style>

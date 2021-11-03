@@ -6,6 +6,10 @@
   --clr-pure-black: #000000;
   --clr-winter-morning: #ffffff;
   --clr-cold-winds: #3460fe;
+
+  --transition-time: 500ms;
+  --transition-curve: ease;
+  --transition: var(--transition-time) var(--transition-curve);
 }
 
 *,

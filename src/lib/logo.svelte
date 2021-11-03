@@ -40,6 +40,6 @@
 
 <style lang="scss">
   path {
-    transition: fill 300ms ease;
+    transition: fill var(--transition);
   }
 </style>
