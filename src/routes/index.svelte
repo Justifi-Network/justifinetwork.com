@@ -31,7 +31,7 @@
 <Section id="contact" fg="--clr-winter-morning" bg="--clr-almost-black" contrast="--clr-cold-winds">
   <p>contact us at</p>
   <a href="mailto:contact@justifinetwork.com">
-    <span class="contrast">contact</span><span class="montserrat">@</span>justifinetwork.com
+    <span class="contrast">contact</span>@justifinetwork.com
   </a>
 </Section>
 
