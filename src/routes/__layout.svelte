@@ -89,4 +89,51 @@
       color: var(--fg);
     }
   }
+
+  @media screen and (max-width: 768px) {
+    aside {
+      position: fixed;
+      top: 0.5rem;
+      bottom: auto;
+      right: 0;
+      left: 0;
+
+      justify-content: center;
+    }
+
+    nav {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    a {
+      flex-direction: row-reverse;
+      font-size: 1rem;
+
+      &::after {
+        margin: 0 1rem;
+      }
+
+      & + a::after {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    a {
+      flex-direction: row-reverse;
+      font-size: 1rem;
+
+      &::after {
+        margin: 0 0.5rem;
+        height: 0.75rem;
+        width: 0.75rem;
+      }
+
+      & + a::after {
+        margin-left: 1.25rem;
+      }
+    }
+  }
 </style>
