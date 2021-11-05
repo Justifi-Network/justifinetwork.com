@@ -31,7 +31,9 @@
 <Section id="contact" fg="--clr-winter-morning" bg="--clr-almost-black" contrast="--clr-cold-winds">
   <p>contact us at</p>
   <a href="mailto:contact@justifinetwork.com">
-    <span class="contrast">contact</span>@justifinetwork.com
+    <span class="contrast">contact</span><br class="mobile" />@justifinetwork<br
+      class="mobile"
+    />.com
   </a>
 </Section>
 
@@ -114,6 +116,41 @@
       &:nth-child(6) {
         grid-area: p3;
       }
+    }
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .mobile {
+      display: initial;
+    }
+
+    .solutions-grid {
+      grid-template-areas: 't1' 'p1' 't2' 'p2' 't3' 'p3';
+    }
+
+    a[href^='mailto:'] {
+      display: block;
+      line-height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    h1 {
+      font-size: 2rem;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    a[href^="mailto:"] {
+      font-size: 2.5rem;
     }
   }
 </style>

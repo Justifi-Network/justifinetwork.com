@@ -43,4 +43,10 @@
 
     transition: background var(--transition);
   }
+
+  @media screen and (max-width: 540px) {
+    section {
+      padding: 2rem;
+    }
+  }
 </style>
