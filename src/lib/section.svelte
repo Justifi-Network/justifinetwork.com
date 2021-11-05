@@ -11,7 +11,7 @@
     let options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.75
+      threshold: 0.60
     }
 
     let observer = new IntersectionObserver((entries: IntersectionObserverEntry[]) => {
@@ -33,7 +33,7 @@
 
 <style lang="scss">
   section {
-    height: 100vh;
+    min-height: 100vh;
     padding: 5rem;
     display: flex;
     flex-direction: column;
