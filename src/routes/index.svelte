@@ -18,13 +18,13 @@
 
   <div class="solutions-grid">
     <h3>networking</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>with experience in both physical networking and software configuration, we are able to provide you with secure and optimized networking solutions, regardless of your requirements.</p>
 
     <h3>software</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>having over a decade of experience in making software, we can make anything from web apps to embedded applications and more, all tailored to your needs.</p>
 
     <h3>hosting</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>starting out as hosting provider, our experience allows us to serve your services with the capabilities you need. either in our cloud network, or in a custom installation.</p>
   </div>
 </Section>
 
