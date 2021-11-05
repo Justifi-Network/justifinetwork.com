@@ -87,6 +87,7 @@
 
     p {
       color: var(--fg);
+      transition: color var(--transition);
     }
   }
 
