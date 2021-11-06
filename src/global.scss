@@ -27,16 +27,18 @@ body {
   overflow: hidden;
 }
 
-::-webkit-scrollbar {
-  width: 0.75rem;
-  background: var(--fg);
-}
+@media screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 0.75rem;
+    background: var(--fg);
+  }
 
-::-webkit-scrollbar-thumb {
-  background: var(--bg);
-}
+  ::-webkit-scrollbar-thumb {
+    background: var(--bg);
+  }
 
-::selection {
-  background: var(--fg);
-  color: var(--bg);
+  ::selection {
+    background: var(--fg);
+    color: var(--bg);
+  }
 }
