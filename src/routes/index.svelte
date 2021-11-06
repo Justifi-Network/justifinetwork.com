@@ -153,4 +153,14 @@
       font-size: 2.5rem;
     }
   }
+
+  @media screen and (max-width: 320px) {
+    h2 {
+      font-size: 3rem;
+    }
+
+    a[href^="mailto:"] {
+      font-size: 2rem;
+    }
+  }
 </style>
