@@ -2,7 +2,7 @@
 
 Justifi Network's site. Made with SvelteKit, TypeScript, and SCSS.
 
-## Developing
+## Contributing
 
 Once you've cloned the project, install dependencies with `yarn install` (preferred), or `npm install`.
 
