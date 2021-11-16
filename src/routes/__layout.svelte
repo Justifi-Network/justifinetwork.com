@@ -17,7 +17,7 @@
   </main>
 
   <footer>
-    <p>Justifi Network © {new Date().getFullYear()}</p>
+    <p>Justifi Network LLP © {new Date().getFullYear()}</p>
   </footer>
 </div>
 
