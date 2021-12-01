@@ -84,6 +84,7 @@
     left: 50%;
     transform: translateX(-50%);
     pointer-events: none;
+    width: fit-content;
 
     p {
       color: var(--fg);
