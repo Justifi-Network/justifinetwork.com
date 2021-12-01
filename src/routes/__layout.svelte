@@ -1,33 +1,35 @@
 <script lang="ts">
   import '../global.scss'
   import { style, active } from '$lib/style'
+  import { onMount } from 'svelte'
+
+  onMount(() => {
+    const updateBodyStyle = () => {
+      document.querySelector('body').style.cssText = $style
+    }
+
+    updateBodyStyle()
+    style.subscribe(updateBodyStyle)
+  })
 </script>
 
-<div style={$style}>
-  <aside>
-    <nav>
-      <a class:active={$active == 'home'} href="#home">home</a>
-      <a class:active={$active == 'solutions'} href="#solutions">solutions</a>
-      <a class:active={$active == 'contact'} href="#contact">contact</a>
-    </nav>
-  </aside>
+<aside>
+  <nav>
+    <a class:active={$active == 'home'} href="#home">home</a>
+    <a class:active={$active == 'solutions'} href="#solutions">solutions</a>
+    <a class:active={$active == 'contact'} href="#contact">contact</a>
+  </nav>
+</aside>
 
-  <main>
-    <slot />
-  </main>
+<main>
+  <slot />
+</main>
 
-  <footer>
-    <p>Justifi Network LLP © {new Date().getFullYear()}</p>
-  </footer>
-</div>
+<footer>
+  <p>Justifi Network LLP © {new Date().getFullYear()}</p>
+</footer>
 
 <style lang="scss">
-  div {
-    overflow-y: auto;
-    height: 100%;
-    scroll-behavior: smooth;
-  }
-
   aside {
     position: fixed;
     top: 0;
