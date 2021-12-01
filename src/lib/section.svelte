@@ -39,7 +39,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: var(--bg);
+    background: transparent;
 
     transition: background var(--transition);
   }
