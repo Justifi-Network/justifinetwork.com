@@ -40,8 +40,6 @@
     justify-content: center;
     align-items: flex-start;
     background: transparent;
-
-    transition: background var(--transition);
   }
 
   @media screen and (max-width: 540px) {
