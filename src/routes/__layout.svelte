@@ -23,9 +23,8 @@
 
 <style lang="scss">
   div {
-    overflow-y: auto;
-    height: 100%;
-    scroll-behavior: smooth;
+    background: var(--bg);
+    transition: background var(--transition);
   }
 
   aside {

@@ -39,9 +39,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: var(--bg);
-
-    transition: background var(--transition);
+    background: transparent;
   }
 
   @media screen and (max-width: 540px) {
