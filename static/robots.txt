@@ -1,2 +1,8 @@
-User-Agent: *
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: *
 Allow: /
+Disallow: /cdn-cgi/
+
+Sitemap: https://justifinetwork.com/sitemap.xml
