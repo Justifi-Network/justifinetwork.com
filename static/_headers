@@ -4,7 +4,7 @@ https://:justifi.pages.dev/*
 /*
 	X-Frame-Options: DENY
 	Cross-Origin-Opener-Policy: same-origin
-	Cross-Origin-Resource-Policy: same-site
+	Cross-Origin-Resource-Policy: cross-origin
 	Cross-Origin-Embedder-Policy: require-corp
 	Referrer-Policy: strict-origin-when-cross-origin
 	Permissions-Policy: accelerometer=(), autoplay=(), camera=(), geolocation=(), gyroscope=(), interest-cohort=(), magnetometer=(), microphone=(), payment=(), usb=()
