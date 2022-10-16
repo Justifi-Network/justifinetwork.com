@@ -11,7 +11,7 @@
     let options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.60
+      threshold: 0.6
     }
 
     let observer = new IntersectionObserver((entries: IntersectionObserverEntry[]) => {
@@ -27,7 +27,7 @@
   })
 </script>
 
-<section {id}>
+<section {id} style={`--fg: var(${fg}); --bg: var(${bg}); --contrast: var(${contrast});`}>
   <slot />
 </section>
 
@@ -39,7 +39,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: transparent;
+    background: var(--bg);
+    color: var(--fg);
   }
 
   @media screen and (max-width: 540px) {

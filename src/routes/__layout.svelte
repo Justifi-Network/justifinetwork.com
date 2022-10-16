@@ -16,17 +16,36 @@
     <slot />
   </main>
 
+  <svg
+    viewBox="0 0 90 6"
+    xmlns="http://www.w3.org/2000/svg"
+    style="width:100%;display:block;margin-bottom:-1px;"
+  >
+    <path d="m-5 0h100l-50 3z" fill="#2c2f33" />
+    <path d="m-5 0h100l-100 6z" fill="#2c2f33" opacity="0.5" />
+    <path d="m-5 0h100v6z" fill="#2c2f33" opacity="0.75" />
+  </svg>
+
   <footer>
     <p>Justifi Network LLP © {new Date().getFullYear()}</p>
+    <div class="socials">
+      <a href="https://www.linkedin.com/company/justifinetwork/" target="_blank"
+        ><img src="/assets/icons/linkedin.svg" alt="LinkedIn " /></a
+      >
+      <a href="https://www.instagram.com/justifinetwork/" target="_blank"
+        ><img src="/assets/icons/instagram.svg" alt="Instagram" /></a
+      >
+      <a href="https://twitter.com/JustifiNetwork" target="_blank"
+        ><img src="/assets/icons/twitter.svg" alt="Twitter" /></a
+      >
+      <a href="https://discord.gg/2yhwQvG8z8" target="_blank"
+        ><img src="/assets/icons/discord.svg" alt="Discord" /></a
+      >
+    </div>
   </footer>
 </div>
 
 <style lang="scss">
-  div {
-    background: var(--bg);
-    transition: background var(--transition);
-  }
-
   aside {
     position: fixed;
     top: 0;
@@ -49,7 +68,7 @@
     pointer-events: initial;
   }
 
-  a {
+  nav a {
     color: var(--fg);
     text-decoration: none;
     font-size: 1.5rem;
@@ -78,16 +97,27 @@
   }
 
   footer {
-    position: fixed;
-    bottom: 0.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    pointer-events: none;
-    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 
     p {
       color: var(--fg);
       transition: color var(--transition);
+    }
+
+    .socials {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      margin-top: 1rem;
+
+      img {
+        height: 1rem;
+        filter: brightness(0) invert(1);
+      }
     }
   }
 

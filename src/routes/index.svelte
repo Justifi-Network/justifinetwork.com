@@ -1,12 +1,27 @@
 <script lang="ts">
-  import Logo from '$lib/logo.svelte'
+  import ScrollIcon from '$lib/scroll-icon.svelte'
   import Section from '$lib/section.svelte'
+  import { fade } from 'svelte/transition'
+
+  let scrollY = 0
 </script>
 
+<svelte:window bind:scrollY />
+
 <Section id="home" fg="--clr-winter-morning" bg="--clr-cold-winds" contrast="--clr-almost-black">
-  <Logo height={120} />
-  <h1>we make tech solutions</h1>
+  <div class="lander">
+    <img src="/banner-logo.svg" alt="Justifi. Software and network solutions" />
+    {#if scrollY == 0}
+      <p transition:fade><ScrollIcon /> scroll down</p>
+    {/if}
+  </div>
 </Section>
+
+<svg viewBox="0 0 90 6" xmlns="http://www.w3.org/2000/svg">
+  <path d="m-5 0h100l-50 3z" fill="#3460FE" />
+  <path d="m-5 0h100l-100 6z" fill="#3460FE" opacity="0.5" />
+  <path d="m-5 0h100v6z" fill="#3460FE" opacity="0.75" />
+</svg>
 
 <Section
   id="solutions"
@@ -18,15 +33,31 @@
 
   <div class="solutions-grid">
     <h3>networking</h3>
-    <p>with experience in both physical networking and software configuration, we are able to provide you with secure and optimized networking solutions, regardless of your requirements.</p>
+    <p>
+      with experience in both physical networking and software configuration, we are able to provide
+      you with secure and optimized networking solutions, regardless of your requirements.
+    </p>
 
     <h3>software</h3>
-    <p>having over a decade of experience in making software, we can make anything from web apps to embedded applications and more, all tailored to your needs.</p>
+    <p>
+      having over a decade of experience in making software, we can make anything from web apps to
+      embedded applications and more, all tailored to your needs.
+    </p>
 
     <h3>hosting</h3>
-    <p>starting out as hosting provider, our experience allows us to serve your services with the capabilities you need. either in our cloud network, or in a custom installation.</p>
+    <p>
+      starting out as hosting provider, our experience allows us to serve your services with the
+      capabilities you need. either in our cloud network, or in a custom installation.
+    </p>
   </div>
 </Section>
+
+<svg viewBox="0 0 90 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="6" fill="#ffffff" />
+  <path d="m-5 6h100l-50-3z" fill="#2C2F33" />
+  <path d="m-5 6h100v-6z" fill="#2C2F33" opacity="0.75" />
+  <path d="m-5 0v6h100z" fill="#2C2F33" opacity="0.5" />
+</svg>
 
 <Section id="contact" fg="--clr-winter-morning" bg="--clr-almost-black" contrast="--clr-cold-winds">
   <p>contact us at</p>
@@ -38,10 +69,38 @@
 </Section>
 
 <style lang="scss">
-  h1 {
-    margin-left: 9rem;
-    font-size: 3rem;
-    font-weight: 400;
+  svg {
+    background-color: white;
+    display: block;
+    width: 100vw;
+  }
+
+  .lander {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    & > img {
+      width: 100%;
+    }
+
+    p {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        height: 2rem;
+      }
+    }
   }
 
   h2 {
@@ -49,16 +108,11 @@
     font-weight: 700;
   }
 
-  h1,
   p,
   a {
     color: var(--fg);
   }
 
-  h1,
-  h2,
-  h3,
-  p,
   a {
     transition: color var(--transition);
   }
@@ -124,6 +178,10 @@
   }
 
   @media screen and (max-width: 768px) {
+    .lander {
+      width: 100%;
+    }
+
     .mobile {
       display: initial;
     }
@@ -139,17 +197,11 @@
   }
 
   @media screen and (max-width: 540px) {
-    h1 {
-      font-size: 2rem;
-      margin: 0 auto;
-      text-align: center;
-    }
-
     h2 {
       font-size: 4rem;
     }
 
-    a[href^="mailto:"] {
+    a[href^='mailto:'] {
       font-size: 2.5rem;
     }
   }
@@ -159,7 +211,7 @@
       font-size: 3rem;
     }
 
-    a[href^="mailto:"] {
+    a[href^='mailto:'] {
       font-size: 2rem;
     }
   }

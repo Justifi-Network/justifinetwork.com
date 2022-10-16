@@ -28,7 +28,21 @@ body {
   font-family: var(--font-sans);
   height: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #3460fe;
 }
+
+/*
+html {
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: always;
+
+  section,
+  footer {
+    scroll-snap-align: start;
+  }
+}
+*/
 
 @media screen and (min-width: 768px) {
   ::-webkit-scrollbar {
