@@ -57,6 +57,8 @@
     align-items: center;
 
     pointer-events: none;
+
+    transition: background-color var(--transition);
   }
 
   nav {
@@ -124,10 +126,13 @@
   @media screen and (max-width: 768px) {
     aside {
       position: fixed;
-      top: 0.5rem;
+      top: 0;
       bottom: auto;
       right: 0;
       left: 0;
+
+      background-color: var(--bg);
+      padding: 0.5rem;
 
       justify-content: center;
     }
