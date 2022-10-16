@@ -116,9 +116,14 @@
       gap: 1rem;
       margin-top: 1rem;
 
+      a:hover img {
+        filter: brightness(0) invert(1) brightness(0.75);
+      }
+
       img {
         height: 1rem;
         filter: brightness(0) invert(1);
+        transition: filter var(--transition);
       }
     }
   }
